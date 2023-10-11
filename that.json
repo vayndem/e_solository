@@ -1,0 +1,30 @@
+{
+    "buku": [
+      {
+        "id_skripsi":"1",
+        "judul": "Pengaruh Teknologi Kecerdasan Buatan dalam Pengelolaan Sumber Daya Manusia",
+        "abstrak": "Python adalah bahasa pemrograman tingkat tinggi yang dirancang untuk menjadi mudah dibaca dan ditulis. Hal ini membuatnya sangat cocok untuk pemula yang ingin mempelajari pemrograman. Python memiliki sintaksis yang bersih dan mudah dimengerti, yang memungkinkan pengembang untuk fokus pada logika program daripada terjebak dalam detail teknis yang rumit. Bahasa pemrograman tingkat tinggi seperti Python memungkinkan pengembang untuk menulis kode dengan lebih sedikit baris dibandingkan dengan bahasa pemrograman lainnya, membuatnya efisien dan cepat untuk pengembangan.",
+        "link":"a"
+      },
+      {
+        "id_skripsi":"2",
+        "judul": "Implementasi Internet of Things (IoT) dalam Sistem Pemantauan Lingkungan Hidup",
+        "abstrak": "Python adalah bahasa pemrograman serba guna, yang berarti bahwa Anda dapat menggunakannya untuk berbagai macam tujuan dan proyek. Mulai dari pengembangan perangkat lunak, pengembangan web, analisis data, kecerdasan buatan (AI), pengembangan game, hingga pemrograman perangkat keras, Python dapat digunakan dalam berbagai bidang. Keberagaman penggunaan ini membuat Python sangat populer di kalangan pengembang dan industri.",
+        "link":"k"
+      },
+      {
+        "id_skripsi":"3",
+        "judul": "Analisis Algoritma Genetika dalam Optimasi Penjadwalan Proyek Konstruksi",
+        "abstrak": "Skripsi ini memperkenalkan aplikasi algoritma genetika dalam optimasi penjadwalan proyek konstruksi. Penelitian ini mengembangkan model matematika dan menggunakan algoritma genetika untuk mengoptimalkan alokasi sumber daya, waktu, dan biaya proyek konstruksi. Hasil penelitian menunjukkan bahwa pendekatan ini dapat mengurangi waktu pelaksanaan proyek dan meminimalkan biaya secara signifikan. Studi ini memberikan kontribusi penting dalam meningkatkan efisiensi pelaksanaan proyek konstruksi.",
+        "link":"o"
+      },
+      {
+        "id_skripsi":"4",
+        "judul": "python",
+        "abstrak": "Python memiliki ekosistem yang kaya dengan berbagai perpustakaan (libraries) dan alat (tools) yang mempermudah pengembangan. Ada ribuan perpustakaan Python yang dapat digunakan untuk memperluas fungsionalitas dan menghemat waktu pengembangan. Contoh perpustakaan terkenal seperti NumPy untuk komputasi ilmiah, pandas untuk analisis data, Django dan Flask untuk pengembangan web, dan TensorFlow untuk pembelajaran mesin adalah beberapa contoh yang menunjukkan kekuatan ekosistem Python. Selain itu, ada juga komunitas pengembang Python yang besar dan aktif di seluruh dunia, sehingga pengembang dapat dengan mudah menemukan bantuan dan dukungan jika mengalami masalah selama pengembangan",
+        "link":"f"
+      }
+
+      
+    ]
+}
