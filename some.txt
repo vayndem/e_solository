@@ -1,0 +1,10 @@
+project_folder/
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   ├── helpers.py
+|   │  
+│   └── templates/
+│       ├── index.html
+│       └── result.html
+└── run.py
