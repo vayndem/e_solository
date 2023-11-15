@@ -16,7 +16,5 @@ def result():
         text = request.form['text']
         length = pencarian(text)
         return render_template('result.html', length=length, text=text)
-    
-
 
 
