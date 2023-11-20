@@ -1,11 +1,18 @@
-<!doctype html>
-<html>
-<head>
-    <title>Flask Text E-repository</title>
-</head>
-<body>
-    <h1>hasil:</h1>
-    <p>yang kamu cari adalah {{text}}</p>
-    <p>hasil nya adalah {{ length }} .</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Flask Text E-repository{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Hasil:</h1>
+        <p>Yang kamu cari adalah: {{ text }}</p>
+        <p>Hasilnya adalah:</p>
+        <p>{{ length }}</p>
+        
+        <form method="post" action="/result">
+            <label for="search">Cari:</label>
+            <input type="text"  name="text" placeholder="search again?" required>
+            <button type="submit">Cari</button>
+        </form>
+    </div>
+{% endblock %}

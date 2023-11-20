@@ -94,4 +94,31 @@ def pencarian(inputan):
     return out.strip()
 
 
+
+def inserting(database_name, collection_name):
+    try:
+        client = MongoClient("mongodb://localhost:27017")
+        db = client[database_name]
+        collection = db[collection_name]
+        data = [
+            {
+        "id_skripsi": "1",
+        "judul": "Pengaruh Teknologi Kecerdasan Buatan dalam Pengelolaan Sumber Daya Manusia",
+        "abstrak": "Python adalah bahasa pemrograman tingkat tinggi yang dirancang untuk menjadi mudah dibaca dan ditulis. Hal ini membuatnya sangat cocok untuk pemula yang ingin mempelajari pemrograman. Python memiliki sintaksis yang bersih dan mudah dimengerti, yang memungkinkan pengembang untuk fokus pada logika program daripada terjebak dalam detail teknis yang rumit. Bahasa pemrograman tingkat tinggi seperti Python memungkinkan pengembang untuk menulis kode dengan lebih sedikit baris dibandingkan dengan bahasa pemrograman lainnya, membuatnya efisien dan cepat untuk pengembangan.",
+        "link": "a"
+        }
+        ]
+
+
+        result = collection.insert_many(data)
+
+        print(f"Koleksi '{collection_name}' berhasil ditambahkan ke dalam database '{database_name}'.")
+        print(f"{len(result.inserted_ids)} dokumen berhasil disisipkan.")
+
+        return"berhasil"
+
+    except Exception as e:
+        return (f"Error: {e}")
+
+
     
