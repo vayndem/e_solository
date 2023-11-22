@@ -5,14 +5,20 @@
 {% block content %}
 <div class="container">
     <h1>Flask Text E-repository</h1>
+    <h1>{{ tam }}</h1>
     <form action="/result" method="post">
         <input type="text" name="text" placeholder="Enter your text" required>
         <button type="submit">Submit</button>
     </form>
     
-    <form action="/initial" method="post" style="display: inline;">
+    <form action="/initial" method="post" style="display: inline-block; ">
         <input type="hidden" name="_method" value="post">
         <button type="submit" class="initial-button">Initial</button>
     </form>
+    <form action="/tambah" method="post" style="display: inline-block; ">
+        <input type="hidden" name="_method" value="post">
+        <button type="submit" class="add-button">tambah</button>
+    </form>
+    
 </div>
 {% endblock %}

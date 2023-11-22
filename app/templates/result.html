@@ -7,7 +7,8 @@
         <h1>Hasil:</h1>
         <p>Yang kamu cari adalah: {{ text }}</p>
         <p>Hasilnya adalah:</p>
-        <p>{{ length }}</p>
+        <p style="text-align: left;">{{ length|replace('\n', '<br>')|safe }}</p>
+        <br>
         
         <form method="post" action="/result">
             <label for="search">Cari:</label>

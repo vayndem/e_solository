@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Submission Form{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Submission Form</h1>
+    <form action="/inserting" method="post">
+        <div>
+            <label for="id_skripsi">ID Skripsi:</label>
+            <input type="text" name="id_skripsi" id="id_skripsi" required>
+        </div>
+        <div>
+            <label for="judul">Judul:</label>
+            <input type="text" name="judul" id="judul" required>
+        </div>
+        <div>
+            <label for="abstrak">Abstrak:</label>
+            <input type="text" name="abstrak" id="abstrak"  required>
+        </div>
+        <div>
+            <label for="link">Link:</label>
+            <input type="text" name="link" id="link" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

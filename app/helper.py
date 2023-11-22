@@ -87,11 +87,10 @@ def pencarian(inputan):
     if all(probability == probabilities[0][0] for _, probability, _ in sorted_predictions):
         out = "Tidak ada"
     else:
-        for id_skripsi, probability, link in sorted_predictions:
-            out += f"Skripsi ID {id_skripsi}: {probability:.4f} dengan link : {link}\n"
-    
+        out = "\n".join(f"Skripsi ID {id_skripsi}: {probability:.4f} \n dengan link : {link}" for id_skripsi, probability, link in sorted_predictions)
 
-    return out.strip()
+    return out
+
 
 
 
@@ -119,6 +118,29 @@ def inserting(database_name, collection_name):
 
     except Exception as e:
         return (f"Error: {e}")
+    
+
+def add_mongo(v,w,x,y):
+    try:
+        client = MongoClient("mongodb://localhost:27017/")
+        db = client["Prigel"]
+        collection = db["buku"]
+
+        data_to_insert = {
+            "id_skripsi": v,
+            "judul": w ,
+            "abstrak": x,
+            "link": y
+        }
+
+        result = collection.insert_one(data_to_insert)
+        print(result.inserted_id)
+        return "berhasil"
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return "gagal"
+
+
 
 
     
